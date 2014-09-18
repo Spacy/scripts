@@ -80,6 +80,8 @@ au BufRead,BufNewFile *.rb,*.rhtml set shiftwidth=2 softtabstop=2
 au BufRead,BufNewFile *.py,*.wsgi set shiftwidth=4 softtabstop=4 tabstop=4 expandtab
 au BufRead,BufNewFile,BufWrite *.php, set shiftwidth=4 softtabstop=4 tabstop=4 expandtab 
 au BufRead,BufNewFile *.md set filetype=markdown
+au BufRead,BufNewFile,BufWrite *.php, imap <F12> /**<CR>@file<TAB><C-R>=expand("%:t")<CR><CR>@desc<CR>@author<TAB>Spacy(xxx@xxx.com)<CR>@date<TAB><C-R>=strftime(
+"%Y-%m-%d %H:%M")<CR><CR>/
 
 " set taglist
 let Tlist_Exit_OnlyWindow = 1
